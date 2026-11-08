@@ -1,0 +1,6 @@
+---
+ - name: Install apache2 & check the usage of port 80 and stop service of nginx
+   hosts: targetserver
+   become: true
+   roles: 
+    - httpd
